@@ -4,7 +4,7 @@
 ### Scripts SQL
 
 * **`creacion_db.sql`**
-    Este archivo contiene los scripts SQL que implementamos para la **creación del esquema de la base de datos**. 
+    Este archivo contiene los scripts SQL que implementamos para la creación del esquema de la base de datos. 
 
 * **`db_con_datos.sql`**
     Este script SQL es el respaldo de la base de datos para ejecutarlo en su instancia de MySQL Workbench.
