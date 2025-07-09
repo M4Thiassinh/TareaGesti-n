@@ -1,16 +1,39 @@
-Tarea de Gestión de Datos
-Este repositorio contiene los recursos y entregables clave para el proyecto de Gestión de Datos, abarcando desde la creación de la base de datos hasta la visualización y análisis en Power BI.
+# Tarea de Gestión de Datos
 
-Explicación de archivos
+Este repositorio alberga los recursos y entregables fundamentales para el proyecto de Gestión de Datos, cubriendo un flujo completo desde la creación de la base de datos hasta el análisis y la visualización interactiva en Power BI.
 
-creacion_db.sql:
-Este archivo contiene los scripts SQL para la creación de la estructura de la base de datos. Incluye las definiciones de tablas, relaciones y cualquier otro elemento necesario para inicializar el esquema de la base de datos.
+---
 
-db_con_datos.sql:
-Este script SQL facilita la importación de datos preexistentes en su instancia de MySQL Workbench. Contiene todas las sentencias necesarias para poblar la base de datos con la información requerida para el análisis.
+## Estructura y Descripción de Archivos
 
-matricula.csv y infraestructura.csv:
-Estos archivos CSV contienen los datos limpios de matrícula e infraestructura, respectivamente. Están listos para ser importados a sus correspondientes tablas "raw" en la base de datos.
+Una guía detallada de los contenidos del repositorio:
 
-Pregunta-1.pbix y Pregunta-2.pbix:
-Estos archivos de Power BI corresponden a las soluciones interactivas para cada pregunta planteada en el informe. Dentro de cada archivo, encontrará los gráficos y visualizaciones que sustentan las respuestas, así como otras pruebas y exploraciones de datos realizadas durante el proceso.
+### Scripts SQL
+
+* **`creacion_db.sql`**
+    ```sql
+    -- Este script define la estructura de la base de datos
+    -- Incluye CREATE TABLE, PRIMARY KEY, FOREIGN KEY, etc.
+    ```
+    Este archivo contiene los scripts SQL esenciales para la **creación del esquema de la base de datos**. Al ejecutarlo, se establecerán todas las tablas, relaciones, restricciones y otros elementos necesarios para inicializar la estructura de la base de datos.
+
+* **`db_con_datos.sql`**
+    ```sql
+    -- Script para poblar la base de datos con datos de ejemplo/preparados
+    -- Contiene sentencias INSERT INTO...
+    ```
+    Este script SQL está diseñado para **facilitar la importación de datos preexistentes**. Al ejecutarlo en su instancia de MySQL Workbench, la base de datos se poblará automáticamente con la información requerida para el análisis, sin necesidad de cargar CSVs manualmente si se prefiere este método.
+
+### Archivos de Datos Limpios (CSV)
+
+* **`matricula.csv`**
+* **`infraestructura.csv`**
+
+    Estos archivos CSV (`Comma Separated Values`) presentan los **datos limpios y preprocesados** correspondientes a la matrícula y la infraestructura, respectivamente. Están optimizados y listos para ser importados directamente a sus respectivas tablas "raw" (o de staging) dentro de la base de datos. Son el punto de partida para cualquier proceso de ETL si se opta por una carga incremental.
+
+### Informes de Power BI
+
+* **`Pregunta-1.pbix`**
+* **`Pregunta-2.pbix`**
+
+    Estos archivos (`.pbix`) son los **informes interactivos desarrollados en Power BI Desktop**. Cada archivo corresponde a la solución visual y analítica de una pregunta específica formulada en el informe del proyecto. Contienen los **gráficos, dashboards y visualizaciones clave** que sustentan las conclusiones, además de otras exploraciones y pruebas realizadas durante el desarrollo del análisis.
