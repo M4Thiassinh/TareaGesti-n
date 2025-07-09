@@ -11,17 +11,9 @@ Una guía detallada de los contenidos del repositorio:
 ### Scripts SQL
 
 * **`creacion_db.sql`**
-    ```sql
-    -- Este script define la estructura de la base de datos
-    -- Incluye CREATE TABLE, PRIMARY KEY, FOREIGN KEY, etc.
-    ```
     Este archivo contiene los scripts SQL esenciales para la **creación del esquema de la base de datos**. Al ejecutarlo, se establecerán todas las tablas, relaciones, restricciones y otros elementos necesarios para inicializar la estructura de la base de datos.
 
 * **`db_con_datos.sql`**
-    ```sql
-    -- Script para poblar la base de datos con datos de ejemplo/preparados
-    -- Contiene sentencias INSERT INTO...
-    ```
     Este script SQL está diseñado para **facilitar la importación de datos preexistentes**. Al ejecutarlo en su instancia de MySQL Workbench, la base de datos se poblará automáticamente con la información requerida para el análisis, sin necesidad de cargar CSVs manualmente si se prefiere este método.
 
 ### Archivos de Datos Limpios (CSV)
